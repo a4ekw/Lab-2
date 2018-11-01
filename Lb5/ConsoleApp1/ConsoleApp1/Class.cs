@@ -13,7 +13,7 @@ namespace ConsoleApp1
             Console.Write("Abstract: Get Out.\n");
         }
     }
-    class Question : IMakingSomething
+    public partial class Question : IMakingSomething
     {
         public string _quest;
         public string Quest
@@ -25,16 +25,8 @@ namespace ConsoleApp1
         {
             Console.Write("Get Out.\n");
         }
-        public virtual void Do()
-        {
-            Console.Write("Some Question.\n");
-        }
-        public override string ToString()
-        {
-            return Quest;
-        }
     }
-    sealed class Test : Question
+    public partial class Test : Question
     {
         public string _testing;
         public string Testing
@@ -44,18 +36,10 @@ namespace ConsoleApp1
         }
         public sealed override void Do()
         {
-            Console.Write("Making Test.\n");
-        }
-        public void T()
-        {
-            Console.Write("Unic Test.\n");
-        }
-        public sealed override string ToString()
-        {
-            return Testing;
+            Console.WriteLine("Making Test.");
         }
     }
-    sealed class Exam : Question
+    public sealed class Exam : Question
     {
         public string _examin;
         public string Examin
@@ -73,11 +57,11 @@ namespace ConsoleApp1
         }
         public sealed override string ToString()
         {
-            Console.WriteLine($"Экзамен: {Examin}\n");
-            return "e";
+            Console.WriteLine($"Экзамен: {Examin}");
+            return "";
         }
     }
-    sealed class FinalExam : Question
+    public sealed class FinalExam : Question
     {
         public string _final;
         public string Final
@@ -99,11 +83,11 @@ namespace ConsoleApp1
         }
         public sealed override string ToString()
         {
-            Console.WriteLine($"Выпускной экзамен: {Final}\n");
-            return "f";
+            Console.WriteLine($"Выпускной экзамен: {Final}");
+            return "";
         }
     }
-    abstract class Printer
+    public abstract class Printer
     {
         virtual public void IAmPrinting(Question obj)
         {
