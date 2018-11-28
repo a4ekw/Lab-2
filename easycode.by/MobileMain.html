@@ -1,0 +1,194 @@
+ <!doctype html>
+
+<html>
+	
+<head>
+	
+<meta charset="utf-8">
+	
+<link rel="stylesheet" type="text/css" href="MStyle.css" >
+	
+<title>EasyCode.By</title>
+		
+</head>
+	
+<body bgcolor = "#F5F5DC"  background="img/BackGroud.jpg" >
+	
+<div id ="Top"><img src="img/Line.png"  max-width="600" > <br>
+ 
+ <img src="img/Logo.png"  id="myButton" onmouseover="swaplmage(this);" onmouseout="swapBack(this);">
+
+<br>
+<img src="img/Line.png"  max-width="600" > 
+</div>
+	<div 
+<div id="Navig"><img src="img/Line.png"  width="155"><br>Разделы: <br><br>
+	
+	<div id="HTML" onmouseover="swapHTML();" onmouseout="HTMLBack();"><img src="img/HTML.png"></div>
+	
+	<div class="ListTest"><img src="img/TestLogo.png"></div>
+	
+	<br>
+	
+	<div id="CSS" onmouseover="swapCSS();" onmouseout="CSSBack();"><img src="img/CSS.png"></div>
+	
+	<div class="ListTest"><img src="img/TestLogo.png"></div>
+	<br>
+	
+	<div id="JS" onmouseover="swapJS();" onmouseout="JSBack();">
+	<img src="img/JS.png"> </div>
+	
+	<div class="ListTest"><img src="img/TestLogo.png"> </div>
+	
+	<img src="img/Line.png"  width="155"><br>
+	<div id="clock"></div>
+	
+	</div>
+	
+	<div id="Panel"><br></div>
+	
+	<div id ="Table"><br><img src="img/Line.png"  max-width="800"><br> 
+    Mobile Site<br>
+	Самый верх <br>
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+    много разного текста<br> 
+ 
+    <br> 
+    Самый Низ
+    <br>
+    <img src="img/Line.png"  max-width="800"><br><br></div>
+	
+    <div id="Finish"><br><img src="img/Finish.png"  max-height="300"  max-width="1200">
+	</div>	
+
+	
+	
+	
+	
+	
+<script>/* смена TopLogo */
+	function swaplmage(imgToSwap){ 
+		imgToSwap.src = "img/LogoJoke.png";
+}
+	function swapBack(imgToSwap){ 
+		imgToSwap.src = "img/Logo.png";
+}
+</script>
+	
+	
+<script>/* смена HTMLPanel */
+	function swapHTML(){
+		document.getElementById('Panel').style.backgroundImage="url(img/HTMLCode.png)";
+}
+	function HTMLBack(){ 
+		document.getElementById('Panel').style.backgroundImage="url(img/RPanel.png)";
+}
+</script>
+	
+	
+<script>/* смена CSSPanel */
+	function swapCSS(){
+		document.getElementById('Panel').style.backgroundImage="url(img/CSSCode.png)";
+}
+
+	function CSSBack(){ 
+		document.getElementById('Panel').style.backgroundImage="url(img/RPanel.png)";
+}
+
+</script>
+	
+	
+<script>/* смена JSPanel*/
+	function swapJS(){
+		document.getElementById('Panel').style.backgroundImage="url(img/JSCode.png)";
+}
+	function JSBack(){ 
+		document.getElementById('Panel').style.backgroundImage="url(img/RPanel.png)";
+}
+</script>
+
+	
+<script>/* часы */
+window.onload = function(){
+	window.setInterval(function(){
+		var now = new Date();
+		var clock = document.getElementById("clock");
+		clock.innerHTML = now.toLocaleTimeString();
+	}, 1000);
+};
+</script>
+
+	
+<script>
+	if(window.innerWidth>=600)
+    location.href='index.html';
+</script>
+	
+	
+</body>
+</html>

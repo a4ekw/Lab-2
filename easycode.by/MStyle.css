@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+
+#Top{
+	margin: 2px auto ;
+    max-width: 603px; max-height: 280px;
+   }
+#Table{
+	color: #000080;
+    font-size: 150%;
+    font-family: Arial, Verdana, sans-serif;
+    text-align: center;
+	border:inset #0000FF;
+    border-top-left-radius: 100% 40px ;
+	border-bottom-right-radius: 100% 40px;
+	margin: 20px auto;
+    max-width: 800px;
+	background-color: rgba(105, 105, 105, 0.5);
+}
+#Navig{
+	width: 200px;
+	height: 450px;
+ 	top:30px;
+	left: -190px;
+    font-size: 190%;
+    font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+	color: #000080;
+	position: fixed;
+ 	z-index: 999;
+	border:inset  blueviolet;
+	border-radius: 0px 30px 30px 30px/30px ;
+	
+	background-color: rgba(105, 105, 105, 0.7);
+	background-image: url(img/Navig.png);
+	-webkit-transition-duration: 0.8s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    }
+
+
+ #Panel{
+	width: 200px;
+	height: 450px;
+ 	top:30px;
+	right: -190px;
+    font-size: 190%;
+    font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+	color: #000080;
+	position: fixed;
+ 	z-index: 999;
+	border:inset  blueviolet;
+	border-radius: 30px 0px 30px 30px/30px ;
+	
+	background-image: url(img/RPanel.png);
+	-webkit-transition-duration: 0.8s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    }
+
+#Navig:hover{
+	left: 0px;
+}
+#Navig:hover+ #Panel{
+	right: 0px;
+}
+
+#HTML{
+	text-align: center;
+	margin-left: 50px;
+	max-width: 110px;
+	border-radius: 0px 30px 30px 30px/30px ;
+	background-color: rgba(0, 0, 150, 0.5);
+}
+#CSS{
+	text-align: center;
+	margin-left: 50px;
+	max-width: 110px;
+	border-radius: 0px 30px 30px 30px/30px ;
+	background-color: rgba(0, 0, 150, 0.5);
+}
+#JS{
+	text-align: center;
+	margin-left: 50px;
+	max-width: 110px;
+	border-radius: 0px 30px 30px 30px/30px ;
+	background-color: rgba(0, 0, 150, 0.5);
+}
+
+
+#CSS:hover{
+	 background-color: rgba(0, 0, 255, 0.8);
+}
+
+#JS:hover{
+	 background-color: rgba(0, 0, 255, 0.8);
+}
+
+#HTML:hover{
+	background-color: rgba(0, 0, 255, 0.8);
+}
+
+.ListTest{
+	text-align: center;
+	margin-left: 80px;
+	max-width: 50px;
+	max-height: 35px;
+	border-radius: 0px 0px 30px 30px/30px ;
+	background-color: rgba(211, 211, 211, 0.9);
+}
+.ListTest:hover{
+	 background-color: rgba(0, 255, 0, 0.7);
+}
+#clock{
+	color: #0000FF;
+	font-weight: bold;
+	font-size: 20px;
+}
+img {
+
+    max-width: 100%;
+
+    max-height: auto;
+
+}
+
+#Finish{
+	margin:5px auto;
+	text-align: center;
+}
