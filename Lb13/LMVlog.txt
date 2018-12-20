@@ -1,0 +1,6 @@
+20.12.2018 21:11:33   Created    путь: D:\Std\MS\Lb13\LMVInspect\LMVdirinfo.txt
+20.12.2018 21:11:33   Created    путь: D:\Std\MS\Lb13\LMVlog.txt
+20.12.2018 21:11:33   Deleted    путь: D:\Std\MS\Lb13\LMVInspect\LMVdirinfo.txt
+20.12.2018 21:11:33   Created    путь: D:\Std\MS\Lb13\LMVFiles
+20.12.2018 21:11:33   Deleted    путь: D:\Std\MS\Lb13\LMVInspect\LMVFiles.zip
+20.12.2018 21:11:33   Created    путь: D:\Std\MS\Lb13\LMVInspect\LMVFiles.zip
